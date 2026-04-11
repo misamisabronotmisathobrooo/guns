@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      MODE: 2c
+      MODE: wordlist
       AMOUNT: 5000
       WORDLIST: newwords.txt
       PAGES: 3
