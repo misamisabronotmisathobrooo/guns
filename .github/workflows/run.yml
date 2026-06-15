@@ -1,16 +1,16 @@
-name: sniper.lol 2c checker
+name: sniper.lol word checker
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/3 * * * *"
 
 jobs:
   run:
     runs-on: ubuntu-latest
 
     env:
-      MODE: 2c
+      MODE: 1c
       AMOUNT: 5000
       WORDLIST: newwords.txt
       PAGES: 3
