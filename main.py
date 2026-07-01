@@ -182,8 +182,8 @@ async def main():
     if not FULL_COOKIES:
         print("No cookies loaded — claiming disabled.")
 
-    if MODE == "4c":
-        usernames = ["".join(random.choice(CHARS) for _ in range(4)) for _ in range(AMOUNT)]
+    if MODE == "1c":
+        usernames = ["".join(random.choice(CHARS) for _ in range(1)) for _ in range(AMOUNT)]
     elif MODE == "wordlist":
         if not os.path.exists(WORDLIST):
             print("WORDLIST file not found")
